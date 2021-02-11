@@ -1,13 +1,4 @@
-import csv
+import pandas as pd
 
-with open('hwy_26_data.csv') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    line_count = 0
-    for row in csv_reader:
-        if line_count == 0:
-            print(f'Column names are {", ".join(row)}')
-            line_count += 1
-        else:
-            print(f'\t{row[0]} colum1 {row[1]} column2, and column 3 is {row[2]}.')
-            line_count += 1
-    print(f'Processed {line_count} lines.')
+df = pd.read_csv("data.csv")
+print(df.head(5))
