@@ -35,7 +35,7 @@ def row2vals(row):
        {row['Men']},                    -- Men
        {row['Women']},                  -- Women
        {row['Hispanic']},               -- Hispanic
-       {row['White']},                  -- White
+       {row['White']},                  -- Whiteclear
        {row['Black']},                  -- Black
        {row['Native']},                 -- Native
        {row['Asian']},                  -- Asian
